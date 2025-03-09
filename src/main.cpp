@@ -59,9 +59,38 @@ void TestVec3() {
 	std::cout << '\n';
 }
 
+void TestVec4() {
+	Vec4 a(2, 2, 2, 2);
+	Vec4 b(1, 6, 4, 5);
+	Vec4 c = a + b;
+
+	std::cout << "Vec4:\n";
+	std::cout << a << '\n' << b << '\n' << c << '\n';
+	std::cout << Length(a) << '\n';
+	std::cout << LengthSqrd(b) << '\n';
+	std::cout << Dot(a, b) << '\n';
+	std::cout << (a - b) << '\n';
+	std::cout << (a * 5) << '\n';
+	std::cout << (b / 2) << '\n';
+	std::cout << Normalize(a) << '\n';
+	std::cout << Vec4::ZERO << '\n';
+	std::cout << Vec4::ONE << '\n';
+
+	a += Vec4::ONE;
+	std::cout << a << '\n';
+	a -= 2.0 * Vec4::ONE;
+	std::cout << a << '\n';
+	a *= 4.0;
+	std::cout << a << '\n';
+	a /= 2.0;
+	std::cout << a << '\n';
+	std::cout << '\n';
+}
+
 int main() {
 	TestVec2();
 	TestVec3();
+	TestVec4();
 
 	return 0;
 }

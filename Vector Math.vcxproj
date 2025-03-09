@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="src\Vectors\Vec2.h" />
     <ClInclude Include="src\Vectors\Vec3.h" />
+    <ClInclude Include="src\Vectors\Vec4.h" />
     <ClInclude Include="src\Vectors\Vectors.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
