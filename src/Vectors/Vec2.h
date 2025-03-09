@@ -35,7 +35,7 @@ public:
 };
 
 Vec2 Vec2::ZERO(0);
-Vec2 Vec2::ONE(1.0);
+Vec2 Vec2::ONE(1);
 
 inline std::ostream& operator<<(std::ostream& out, const Vec2& vec) {
 	return out << '(' << vec.x << ", " << vec.y << ")";
